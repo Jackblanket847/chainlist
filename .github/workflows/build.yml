@@ -6,7 +6,8 @@ on:
 jobs:
   prepare:
     name: Prepare
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+             macos
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -19,7 +20,8 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+             macos
     needs:
       - prepare
     steps:
