@@ -10,7 +10,8 @@ on:
 jobs:
   publish:
     name: Publish to GitHub Pages
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+             macos
     permissions:
       contents: write
     steps:
