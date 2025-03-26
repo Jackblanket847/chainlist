@@ -6,7 +6,8 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+             macos
     outputs:
       deploy: ${{ steps.set-output.outputs.deploy }}
     steps:
